@@ -1,7 +1,14 @@
+Install nodejs:
+Via NVM:
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+nvm install v12
 nvm use v12
 
+
 staging:
-serverless deploy --stage staging --aws-profile profile_name
+serverless deploy --stage staging --aws-profile profile_name_here
 
 Production: 
-serverless deploy --stage production --aws-profile litigait
+serverless deploy --stage production --aws-profile profile_name_here
