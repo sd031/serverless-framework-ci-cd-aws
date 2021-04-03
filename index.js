@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', function (req, res) {
-  res.send('Hello World!')
+  res.send('Serverless ci/cd v1!')
 })
 
 module.exports.handler = serverless(app);

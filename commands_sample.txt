@@ -1,0 +1,7 @@
+nvm use v12
+
+staging:
+serverless deploy --stage staging --aws-profile profile_name
+
+Production: 
+serverless deploy --stage production --aws-profile litigait
