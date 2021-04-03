@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands:
+      - npm install -g serverless
+      - npm install
+  build:
+    commands:
+      - serverless deploy -s ${STAGE_NAME} && cd -
+
+cache:
+  paths:
+    - node_modules
