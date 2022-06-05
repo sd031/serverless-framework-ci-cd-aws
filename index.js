@@ -6,7 +6,7 @@ app.get('/', function (req, res) {
     res.send('ok')
   })
 app.get('/version', function (req, res) {
-  res.send('Serverless ci/cd v2!')
+  res.send('Serverless ci/cd v1!')
 })
 
 module.exports.handler = serverless(app);

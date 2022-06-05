@@ -1,8 +1,8 @@
 service: serverless-demo
 provider:
   name: aws
-  runtime: nodejs12.x
-  stage: dev
+  runtime: nodejs14.x
+  stage: prod
   region: us-west-2
   memorySize: 128
 functions:
